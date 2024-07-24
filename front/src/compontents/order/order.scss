@@ -1,0 +1,153 @@
+.order {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.order__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.order.active {
+  display: flex;
+}
+
+.order__cart {
+  border-radius: 8px;
+  background-color: #ccc;
+  padding: 12px;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+  animation: slowDown ease 0.5s;
+  width: 900px;
+  padding: 30px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.order__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.6rem;
+  background-color: rgb(152, 132, 132);
+  padding: 8px 12px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  &:hover {
+    background-color: rgb(242, 45, 45);
+  }
+}
+.order__img {
+  flex: 3;
+  border-radius: 8px;
+}
+.order__anh {
+  width: 90%;
+  height: 100%;
+  height: 250px;
+  margin: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.order__information {
+  flex: 3;
+  background-color: rgb(202, 129, 129);
+  border-radius: 8px;
+  padding: 24px;
+}
+.order__store {
+  text-align: center;
+  font-size: 3rem;
+  color: rgb(33, 6, 6);
+}
+.order__mon {
+  margin-top: 8px;
+}
+.order__gt {
+  font-size: 1.6rem;
+}
+.order__name {
+  font-size: 2rem;
+  padding: 0 24px;
+  color: rgb(98, 4, 4);
+  text-transform: uppercase;
+}
+.order__size {
+  margin: 12px 0;
+}
+.order__button {
+  padding: 4px 16px;
+  margin: 0 8px;
+  color: rgb(26, 5, 5);
+  font-weight: 600;
+}
+.order__soluong {
+  margin: 12px 0;
+}
+.order__price {
+  margin-bottom: 12px;
+}
+.order__money {
+  padding: 12px;
+  font-size: 2rem;
+  color: rgb(62, 35, 19);
+}
+.order__mana {
+  padding: 6px 18px;
+  margin: 0 3px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgb(26, 5, 5);
+}
+.order__add {
+  margin-top: 30px;
+  text-align: center;
+}
+.order__cart1 {
+  padding: 8px 50px;
+}
+.order__button.active{
+  color: red;
+}
+@keyframes slowDown {
+  from {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 739px)  {
+  .order__cart{
+    flex-direction: column;
+  }
+  .order__information {
+    flex: 3;
+    background-color: #ccc;
+}
+.order__anh{
+  width: 100%;
+}
+.order__mota{
+  font-size: 1.8rem;
+}
+.order__store{
+  margin-bottom: 18px;
+}
+.order__money{
+  font-size: 1.6px;
+}
+}

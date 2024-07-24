@@ -1,0 +1,123 @@
+.about {
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  &__icon {
+    font-size: 2.5rem;
+    padding: 0 20px;
+    transition: all linear 0.3s;
+  }
+}
+.about__heading {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #f24227;
+  margin-bottom: 30px;
+}
+.about__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  &.right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+.about__container {
+  border-radius: 8px;
+  margin: 12px;
+  padding: 12px;
+  flex: 2;
+  background-color: #ccc;
+  &.active .about__content.left {
+    height: 100%;
+    animation: flider ease 0.5s;
+  }
+  &.active .about__content.right {
+    height: 100%;
+    animation: fliderReverse ease 0.5s;
+  }
+  &.active .about__icon {
+    transform: rotate(180deg);
+  }
+  &.active .about__infor {
+    display: none;
+  }
+}
+.about__infor {
+  margin-left: 15px;
+  font-size: 1.4rem;
+  padding: 6px 0;
+  color: #2738f2;
+  cursor: pointer;
+}
+.about__img_content {
+  width: 400px;
+  height: 300px;
+  // border-radius: 50%;
+  // object-fit: cover;
+  border-radius: 20px;
+}
+.about__img {
+  padding: 0 30px;
+  flex: 1;
+}
+.about__myname {
+  padding: 20px 0;
+  font-size: 1.8rem;
+  color: rgb(5, 56, 13);
+  font-weight: 500;
+}
+.about__content {
+  padding: 0 16px;
+  font-size: 1.8rem;
+  color: rgb(153, 4, 4);
+  height: 0;
+  overflow: hidden;
+}
+@keyframes flider {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fliderReverse {
+  from {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 739px) and (max-width: 1023px) {
+  .about__img_content{
+    width: 300px;
+    height: 200px;
+  }
+  .about__icon{
+    padding: 0 6px;
+  }
+}
+@media (max-width:739px){
+  .about__img_content{
+    width: 250px;
+    height: 110px;
+  }
+  .about__img{
+    padding: 4px 12px;
+  }
+  .about__myname{
+    padding: 14px 0;
+  }
+}

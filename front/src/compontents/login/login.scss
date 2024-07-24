@@ -1,0 +1,116 @@
+.login {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(https://scr.vn/wp-content/uploads/2020/08/H%C3%ACnh-n%E1%BB%81n-background-vector-scaled.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 10000;
+}
+.login-img {
+  flex: 2;
+}
+.login-table {
+  flex: 3;
+  background-color: rgb(17, 5, 81);
+  margin: 0 60px 0 0;
+  box-shadow: 1px 0 3px 1px rgb(137, 120, 239);
+}
+.login-header {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.login_name {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 0 100px;
+  text-decoration: none;
+}
+.login_name.active {
+  font-size: 28px;
+  font-weight: 600;
+  padding: 0 100px;
+  color: #f4800d;
+}
+.login-button {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+.login_content {
+  display: flex;
+  align-items: center;
+  margin: 0 30px;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 5px;
+  width: 70%;
+  background-color: #357af9;
+  &:hover {
+    background-color: #cf4c24;
+  }
+}
+.login-content-icon {
+  font-size: 16px;
+  color: #ccc;
+  margin-right: 30px;
+}
+.login__title-name {
+  text-decoration: none;
+  color: rgb(252, 238, 238);
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.login__acc {
+  text-align: center;
+  font-size: 12px;
+  color: #08011d;
+  margin-top: 16px;
+}
+.login__acc-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login__acc-input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 6px;
+  color: #05053e;
+  font-size: 16px;
+  border-radius: 5px;
+  // box-shadow: 3px 0 5px 4px rgb(232, 232, 232);
+  border: none;
+}
+.login_btn {
+  width: 70%;
+  margin-top: 28px;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #3627d8;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.login-help {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 26px;
+  padding-bottom: 30px;
+  color: rgb(232, 224, 224);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5rem;
+}

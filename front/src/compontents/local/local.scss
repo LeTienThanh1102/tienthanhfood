@@ -1,0 +1,119 @@
+.local {
+  padding-top: 30px;
+  margin: 40px 0 0 0;
+  box-shadow: 0 0 20px rgb(0 0 0 / 23%);
+  padding-bottom: 30px;
+  background-color: #fad5d0;
+}
+.local__contaniner {
+  text-decoration: none;
+}
+.local__max {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.local__header {
+  display: flex;
+  justify-content: center;
+}
+.local__icon {
+  font-size: 2.4rem;
+  color: #f9705d;
+  padding: 0 12px;
+}
+.local__mana {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.local__heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #fb2613;
+  text-transform: uppercase;
+}
+.recomment {
+  text-align: center;
+  font-size: 2rem;
+  color: #f9705d;
+  padding: 10px 0;
+}
+.loacal__body {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.local__img {
+  width: 120px;
+  height: 120px;
+  transform: scale(1);
+  background-color: transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.local__contaniner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.local__content {
+  padding: 10px 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  overflow: hidden;
+  &:hover {
+    .local__img {
+      transform: scale(1.1);
+    }
+    .local__name {
+      opacity: 1;
+    }
+  }
+}
+.local__name {
+  font-size: 1.8rem;
+  color: #ff2f00;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+  margin-bottom: 8px;
+  padding: 0px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 739px) and (max-width: 1023px) {
+  .local__content{
+    padding: 5px 15px;
+  }
+  
+}
+@media (max-width: 739px){
+  .local__img {
+    width: 60px;
+    height: 60px;
+  }
+  .local__content {
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .local__name{
+    opacity: 1;
+  }
+  .local{
+    margin: 0;
+  }
+  .loacal__body{
+    margin: 10px 0;
+  }
+}
